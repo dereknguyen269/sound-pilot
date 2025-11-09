@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sound Pilot - Privacy Policy</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            background: white;
+            padding: 40px;
+            border-radius: 12px;
+            box-shadow: 0 10px 40px rgba(0, 0, 0, 0.2);
+        }
+
+        h1 {
+            color: #667eea;
+            font-size: 2.5em;
+            margin-bottom: 10px;
+            border-bottom: 3px solid #667eea;
+            padding-bottom: 10px;
+        }
+
+        h2 {
+            color: #764ba2;
+            font-size: 1.8em;
+            margin-top: 30px;
+            margin-bottom: 15px;
+            border-left: 4px solid #667eea;
+            padding-left: 15px;
+        }
+
+        h3 {
+            color: #555;
+            font-size: 1.3em;
+            margin-top: 20px;
+            margin-bottom: 10px;
+        }
+
+        h4 {
+            color: #666;
+            font-size: 1.1em;
+            margin-top: 15px;
+            margin-bottom: 8px;
+        }
+
+        p {
+            margin-bottom: 15px;
+            color: #555;
+        }
+
+        strong {
+            color: #333;
+        }
+
+        ul {
+            margin-left: 20px;
+            margin-bottom: 15px;
+        }
+
+        li {
+            margin-bottom: 8px;
+            color: #555;
+        }
+
+        code {
+            background: #f4f4f4;
+            padding: 2px 6px;
+            border-radius: 3px;
+            font-family: 'Courier New', monospace;
+            color: #d63384;
+        }
+
+        .highlight {
+            background: #f8f9fa;
+            border-left: 4px solid #667eea;
+            padding: 15px;
+            margin: 20px 0;
+            border-radius: 4px;
+        }
+
+        .last-updated {
+            color: #666;
+            font-style: italic;
+            margin-bottom: 30px;
+        }
+
+        .summary {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 20px;
+            border-radius: 8px;
+            margin-top: 30px;
+            font-size: 1.1em;
+        }
+
+        .contact-box {
+            background: #f8f9fa;
+            border: 2px solid #667eea;
+            padding: 20px;
+            border-radius: 8px;
+            margin: 20px 0;
+        }
+
+        .emoji {
+            font-size: 1.2em;
+        }
+
+        a {
+            color: #667eea;
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        hr {
+            border: none;
+            border-top: 2px solid #e0e0e0;
+            margin: 30px 0;
+        }
+
+        @media (max-width: 768px) {
+            .container {
+                padding: 20px;
+            }
+
+            h1 {
+                font-size: 2em;
+            }
+
+            h2 {
+                font-size: 1.5em;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Sound Pilot - Privacy Policy</h1>
+        <p class="last-updated"><strong>Last Updated:</strong> November 9, 2025</p>
+
+        <h2>Single Purpose Description</h2>
+        <p>Sound Pilot is a browser extension that provides enhanced audio volume control for media content on supported websites. The extension allows users to amplify audio beyond browser limits (up to 20x), control playback, customize themes, and manage volume across multiple tabs - all through a simple popup interface.</p>
+
+        <h2>Chrome Web Store Privacy Disclosures</h2>
+
+        <h3>Single Purpose</h3>
+        <div class="highlight">
+            <p><strong>Enhanced audio volume control and playback management for browser media content.</strong></p>
+            <p>Sound Pilot serves one clear purpose: to give users complete control over audio volume and playback in their browser tabs. The extension amplifies audio beyond standard browser limits, provides preset and custom volume multipliers, and offers convenient playback controls for supported media platforms.</p>
+        </div>
+
+        <h3>Permissions Justification</h3>
+
+        <h4>Required Permissions:</h4>
+
+        <p><strong>1. <code>activeTab</code></strong></p>
+        <ul>
+            <li><strong>Purpose:</strong> Access the currently active tab to detect and control media elements</li>
+            <li><strong>Usage:</strong> Allows the extension to inject volume control scripts into the active tab when the user clicks the extension icon</li>
+            <li><strong>Data Access:</strong> Only accesses the tab when user explicitly opens the popup</li>
+        </ul>
+
+        <p><strong>2. <code>tabs</code></strong></p>
+        <ul>
+            <li><strong>Purpose:</strong> List and identify tabs with media content for multi-tab control</li>
+            <li><strong>Usage:</strong> Enables the dropdown selector that shows all tabs with active media</li>
+            <li><strong>Data Access:</strong> Only reads tab titles and URLs to identify media platforms (YouTube, Spotify, etc.)</li>
+        </ul>
+
+        <p><strong>3. <code>scripting</code></strong></p>
+        <ul>
+            <li><strong>Purpose:</strong> Inject content scripts to control audio elements on web pages</li>
+            <li><strong>Usage:</strong> Required to manipulate Web Audio API and HTML5 media elements for volume control</li>
+            <li><strong>Data Access:</strong> Only injects scripts into supported media platforms</li>
+        </ul>
+
+        <p><strong>4. <code>storage</code></strong></p>
+        <ul>
+            <li><strong>Purpose:</strong> Save user preferences locally</li>
+            <li><strong>Usage:</strong> Stores volume settings, theme preferences, and last-used multiplier</li>
+            <li><strong>Data Access:</strong> All data stored locally in browser; never transmitted</li>
+        </ul>
+
+        <h4>Host Permissions:</h4>
+        <p>The extension requests access to specific media platforms:</p>
+        <ul>
+            <li><code>https://www.youtube.com/*</code></li>
+            <li><code>https://open.spotify.com/*</code></li>
+            <li><code>https://music.youtube.com/*</code></li>
+            <li><code>https://soundcloud.com/*</code></li>
+            <li><code>https://www.netflix.com/*</code></li>
+            <li><code>https://www.twitch.tv/*</code></li>
+            <li><code>https://vimeo.com/*</code></li>
+        </ul>
+        <p><strong>Purpose:</strong> These permissions allow the extension to detect and control audio/video elements on these specific platforms. The extension only activates on these domains and does not access any other websites.</p>
+
+        <h2>Data Collection and Usage</h2>
+
+        <h3>What We DO NOT Collect:</h3>
+        <ul>
+            <li><span class="emoji">❌</span> Personal information (name, email, address)</li>
+            <li><span class="emoji">❌</span> Browsing history</li>
+            <li><span class="emoji">❌</span> Website content or data</li>
+            <li><span class="emoji">❌</span> Cookies or tracking data</li>
+            <li><span class="emoji">❌</span> Analytics or usage statistics</li>
+            <li><span class="emoji">❌</span> Any data transmitted to external servers</li>
+        </ul>
+
+        <h3>What We Store Locally:</h3>
+        <ul>
+            <li><span class="emoji">✅</span> Volume multiplier preferences (e.g., 2x, 5x)</li>
+            <li><span class="emoji">✅</span> Base volume level (0-100%)</li>
+            <li><span class="emoji">✅</span> Selected theme preference</li>
+            <li><span class="emoji">✅</span> Last used settings per tab</li>
+        </ul>
+        <p><strong>Storage Location:</strong> All data is stored locally in your browser using Chrome's <code>chrome.storage.local</code> API. This data never leaves your device.</p>
+
+        <h2>Data Transmission</h2>
+        <div class="highlight">
+            <p><strong>Sound Pilot does NOT transmit any data.</strong></p>
+            <ul>
+                <li>No network requests are made to external servers</li>
+                <li>No analytics or tracking services are used</li>
+                <li>No user data is collected, shared, or sold</li>
+                <li>All functionality operates entirely within your browser</li>
+            </ul>
+        </div>
+
+        <h2>Third-Party Services</h2>
+        <p>Sound Pilot does not use any third-party services, analytics, or tracking tools.</p>
+
+        <h2>User Data Privacy</h2>
+
+        <h3>Data Access:</h3>
+        <ul>
+            <li>The extension only accesses media elements (audio/video tags) on supported websites</li>
+            <li>No access to passwords, form data, or personal information</li>
+            <li>No access to page content beyond media controls</li>
+        </ul>
+
+        <h3>Data Retention:</h3>
+        <ul>
+            <li>Settings are stored indefinitely in local browser storage</li>
+            <li>Users can clear all data by removing the extension</li>
+            <li>No data is retained after uninstallation</li>
+        </ul>
+
+        <h3>Data Sharing:</h3>
+        <ul>
+            <li>No data is shared with third parties</li>
+            <li>No data is transmitted to developers or any external service</li>
+            <li>All processing happens locally in your browser</li>
+        </ul>
+
+        <h2>Security</h2>
+        <ul>
+            <li>Uses Chrome's secure message passing API for communication between extension components</li>
+            <li>Follows Chrome Extension Manifest V3 security best practices</li>
+            <li>Minimal permission requests (only what's necessary for functionality)</li>
+            <li>No external dependencies or libraries that could compromise security</li>
+        </ul>
+
+        <h2>Children's Privacy</h2>
+        <p>Sound Pilot does not knowingly collect any information from users of any age. The extension does not collect, store, or transmit personal data.</p>
+
+        <h2>Changes to Privacy Policy</h2>
+        <p>We may update this privacy policy from time to time. Any changes will be reflected in the "Last Updated" date at the top of this document. Continued use of the extension after changes constitutes acceptance of the updated policy.</p>
+
+        <h2>User Rights</h2>
+        <p>Users have the right to:</p>
+        <ul>
+            <li>View all locally stored data via Chrome DevTools</li>
+            <li>Delete all stored data by removing the extension</li>
+            <li>Disable the extension at any time</li>
+            <li>Request information about data practices</li>
+        </ul>
+
+        <h2>Contact Information</h2>
+        <div class="contact-box">
+            <p>For privacy concerns or questions:</p>
+            <ul>
+                <li><strong>Email:</strong> <a href="mailto:derek@toolover.work">derek@toolover.work</a></li>
+                <li><strong>Support:</strong> Include "Privacy" in the subject line</li>
+            </ul>
+        </div>
+
+        <h2>Compliance</h2>
+        <p>Sound Pilot complies with:</p>
+        <ul>
+            <li>Chrome Web Store Developer Program Policies</li>
+            <li>Chrome Extension Manifest V3 requirements</li>
+            <li>General Data Protection Regulation (GDPR) principles</li>
+            <li>California Consumer Privacy Act (CCPA) principles</li>
+        </ul>
+
+        <h2>Open Source</h2>
+        <p>Sound Pilot's code is transparent and can be reviewed to verify these privacy practices. Users can inspect the source code to confirm no data collection or transmission occurs.</p>
+
+        <hr>
+
+        <div class="summary">
+            <p><strong>Summary:</strong> Sound Pilot is a privacy-focused extension that operates entirely within your browser. We don't collect, transmit, or store any personal data. All settings are saved locally on your device, and the extension only accesses media elements on supported platforms to provide volume control functionality.</p>
+        </div>
+    </div>
+</body>
+</html>
